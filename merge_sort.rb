@@ -17,9 +17,9 @@ def merge(first_half, second_half)
   merged_array = []
   
   while first_half.size > 0 && second_half.size > 0 do
-    if first_half [0] >= second_half[0]
+    if first_half [0] <= second_half[0]
       merged_array.push(first_half.shift)
-    elsif second_half[0] > first_half[0]
+    elsif second_half[0] < first_half[0]
       merged_array.push(second_half.shift)
     end
   end
