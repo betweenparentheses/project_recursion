@@ -2,8 +2,8 @@
 def merge_sort(array)
   return array if array.size == 1
   
-  first_half = Array[0..(array.size / 2)]
-  second_half = Array [((array.size / 2) + 1)..array.last]
+  first_half = array[0..((array.size-1)/ 2)]
+  second_half = array [(((array.size - 1) / 2) + 1)..array.size - 1]
   
   first_half = merge_sort(first_half)
   second_half = merge_sort(second_half)
