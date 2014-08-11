@@ -26,9 +26,13 @@ def merge(first_half, second_half)
 
 #once only one (sorted) array remains, just add on the rest of that array
 #only one of these loops will ever run
-  while first_half.size > 0 {merged_array.push(first_half.shift)}
-  while second_half.size > 0 {merged_array.push(second_half.shift)}
-    
+  while first_half.size > 0 do 
+    merged_array.push(first_half.shift)
+  end
+  while second_half.size > 0 do 
+    merged_array.push(second_half.shift)
+  end
+
   merged_array
 end
   
